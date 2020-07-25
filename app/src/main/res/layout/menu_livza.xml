@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    tools:context=".MenuLivza">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="203dp"
+        android:background="@drawable/header"
+        android:focusable="auto"
+        android:focusableInTouchMode="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="140dp"
+            android:layout_height="107dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo2" />
+
+        <TextView
+            android:id="@+id/menuuu"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="16dp"
+            android:text="Menu"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.82"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.091" />
+
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="28dp"
+            android:layout_height="25dp"
+            android:background="@drawable/abc_vector_test"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.041"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.091" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="283dp"
+            android:layout_height="43dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/icon"
+            app:layout_constraintVertical_bias="0.345"
+            app:srcCompat="@drawable/searchfield" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.526"
+            app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+
+        <EditText
+            android:id="@+id/serch"
+            android:layout_width="253dp"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:inputType="none"
+            android:text="Serch"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toEndOf="@+id/imageView6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:layout_marginTop="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ChesseLayout"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/chesseIm"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/chesse" />
+
+                <TextView
+                    android:id="@+id/CheeseTxt"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btn_card"
+                    android:text="Chesse"
+                    android:textAlignment="center"
+                    android:textColor="#070707"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.88" />
+
+                <TextView
+                    android:id="@+id/CheeseDespo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(06)"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/CheeseTxt"
+                    app:layout_constraintStart_toStartOf="@+id/CheeseTxt"
+                    app:layout_constraintTop_toTopOf="@+id/CheeseTxt" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/SandwicheLayot"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/sandwichIm"
+                    android:layout_width="200sp"
+                    android:layout_height="200sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/sandwiche" />
+
+                <TextView
+                    android:id="@+id/SandwicheTxt"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btn_card"
+                    android:text="Sandwiches"
+                    android:textAlignment="center"
+                    android:textColor="#070707"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/sandwichIm"
+                    app:layout_constraintVertical_bias="0.82" />
+
+                <TextView
+                    android:id="@+id/SandwichesDespo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(06)"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/SandwicheTxt"
+                    app:layout_constraintStart_toStartOf="@+id/SandwicheTxt"
+                    app:layout_constraintTop_toTopOf="@+id/SandwicheTxt" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/PizzaLayout"
+                android:layout_width="200dp"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/PizzaIm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/piza" />
+
+                <TextView
+                    android:id="@+id/PizzaTxt"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btn_card"
+                    android:text="Pizza"
+                    android:textAlignment="center"
+                    android:textColor="#070707"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/PizzaIm"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <TextView
+                    android:id="@+id/PizzaDespo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(12)"
+                    app:layout_constraintBottom_toBottomOf="@+id/PizzaIm"
+                    app:layout_constraintEnd_toEndOf="@+id/PizzaTxt"
+                    app:layout_constraintStart_toStartOf="@+id/PizzaTxt"
+                    app:layout_constraintTop_toTopOf="@+id/PizzaTxt" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/PlaLayout"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/plaIm"
+                    android:layout_width="200sp"
+                    android:layout_height="200sp"
+                    android:layout_margin="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/pla" />
+
+                <TextView
+                    android:id="@+id/PlaTxt"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btn_card"
+                    android:text="Pla"
+                    android:textAlignment="center"
+                    android:textColor="#070707"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/plaIm"
+                    app:layout_constraintVertical_bias="0.89" />
+
+                <TextView
+                    android:id="@+id/PlaDespo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(10)"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/PlaTxt"
+                    app:layout_constraintStart_toStartOf="@+id/PlaTxt"
+                    app:layout_constraintTop_toTopOf="@+id/PlaTxt" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/Juslayout"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/JusIm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/jus" />
+
+                <TextView
+                    android:id="@+id/jusTxt"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btn_card"
+                    android:text="Jus"
+                    android:textAlignment="center"
+                    android:textColor="#070707"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.92" />
+
+                <TextView
+                    android:id="@+id/JusDespo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(06)"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/jusTxt"
+                    app:layout_constraintStart_toStartOf="@+id/jusTxt"
+                    app:layout_constraintTop_toTopOf="@+id/jusTxt" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/CaffeLayout"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/caffeIm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/caff" />
+
+                <TextView
+                    android:id="@+id/CaffeTxt"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btn_card"
+                    android:text="Caffe"
+                    android:textAlignment="center"
+                    android:textColor="#070707"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/caffeIm"
+                    app:layout_constraintVertical_bias="0.90999997" />
+
+                <TextView
+                    android:id="@+id/CaffeDespo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(06)"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/CaffeTxt"
+                    app:layout_constraintStart_toStartOf="@+id/CaffeTxt"
+                    app:layout_constraintTop_toTopOf="@+id/CaffeTxt" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </GridLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/nav_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/Menu"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/Shop"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/Shop"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/shop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/Pofile"
+            app:layout_constraintHorizontal_bias="0.63"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/Pofile"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/user"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
