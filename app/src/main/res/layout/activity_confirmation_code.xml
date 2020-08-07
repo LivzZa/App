@@ -91,7 +91,7 @@
         android:layout_marginTop="64dp"
         android:layout_marginEnd="84dp"
         android:layout_marginBottom="58dp"
-        android:text="Resande the code"
+        android:text="Resend the code"
         android:textAlignment="center"
         android:textColor="@color/cardview_light_background"
         android:textSize="25sp"

@@ -88,7 +88,7 @@
             android:layout_height="43dp"
             android:layout_marginBottom="112dp"
             android:ems="10"
-            android:inputType="number"
+            android:inputType="phone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.312"

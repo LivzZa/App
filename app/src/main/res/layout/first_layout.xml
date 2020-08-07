@@ -8,13 +8,16 @@
     android:background="@drawable/main_container"
     tools:context=".FirstLayout">
 
+
     <ImageView
-        android:id="@+id/IconLivza"
-        android:layout_width="237dp"
-        android:layout_height="162dp"
+        android:id="@+id/imageView5"
+        android:layout_width="411dp"
+        android:layout_height="370dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:layout_constraintVertical_bias="0.468"
+        app:srcCompat="@drawable/logo1" />
 </androidx.constraintlayout.widget.ConstraintLayout>

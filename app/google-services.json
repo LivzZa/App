@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "15842157684",
+    "firebase_url": "https://beta-livza.firebaseio.com",
+    "project_id": "beta-livza",
+    "storage_bucket": "beta-livza.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15842157684:android:59641f75ec96f1354add21",
+        "android_client_info": {
+          "package_name": "com.example.livza"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15842157684-f3qn6auk03t5vqg12105v01jo7rohf1q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8o0jYX_Y6NqAqMXTJ_gL3kqruzWe-nuE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15842157684-f3qn6auk03t5vqg12105v01jo7rohf1q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
